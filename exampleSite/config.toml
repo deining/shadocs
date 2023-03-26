@@ -56,6 +56,12 @@ themesdir              = "../.."
     weight       = 2
     languageName = "Français"
 
+  [Languages.de]
+    contentDir   = "content/german"
+    title        = "Dokumentation für das Theme Shadocs"
+    weight       = 3
+    languageName = "Deutsch"
+
 #
 # Specific configuration
 #
