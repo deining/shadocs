@@ -34,7 +34,10 @@
             {{- .Language.LanguageName -}}
           </div>
         {{- else -}}
-          <a
+          {{ if eq ($.Scratch.Get "translatedUrl") "" }}
+            {{ errorf "translatedURL equals empty string" }}
+           {{ end }}
+        <a
             href="{{- $.Scratch.Get "translatedUrl" -}}"
             class="dropdown-item has-text-weight-bold"
           >
